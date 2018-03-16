@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Train Timer</title>
+</head>
+
+<div class="page-wrapper">
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Train Timer</h1>
+      <p class="lead">Know where you need to be, when.</p>
+    </div>
+  </div>
+
+  <div class="card">
+        <h5 class="card-header">Train Info</h5>
+        <div class="card-body">
+          <table class="table table-bordered" id="trainTable">
+              <tr>
+                  <th> Train Name </th>
+                  <th> Destination </th>
+                  <th> Frequency </th>
+                  <th> Next Arrival </th>
+                  <th> Minutes Away </th>
+              </tr>
+          </table>
+         </div>
+  </div>
+
+
+  <div class="card">
+          <h5 class="card-header">Looking for a train?</h5>
+          <div class="card-body">
+            
+              <div id="form-container">
+                <form>
+                  <div class="form-group">
+                      <label for="exampleFormControlInput1">Train Name</label>
+                      <input type="name" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlInput1">Destination</label>
+                      <input type="destination" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlInput1">First Train Time (In Military Time)</label>
+                      <input type="start-time" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlInput1">Frequency (In Minutes)</label>
+                      <input type="interval" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+          </div>
+  </div>
+</div>  
+  <script src="javascript/app.js"></script>
+</body>
+</html>
+    
+  </body>
+</html>
