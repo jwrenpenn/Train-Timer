@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- 
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
@@ -47,21 +47,21 @@
                 <form>
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Train Name</label>
-                      <input type="name" class="form-control" id="exampleFormControlInput1">
+                      <input type="text" class="input" id="trainNameInput">
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Destination</label>
-                      <input type="destination" class="form-control" id="exampleFormControlInput1">
+                      <input type="text" class="input" id="destinationInput">
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlInput1">First Train Time (In Military Time)</label>
-                      <input type="start-time" class="form-control" id="exampleFormControlInput1">
+                      <input type="integer" class="input" id="timeInput">
                   </div>
                   <div class="form-group">
                       <label for="exampleFormControlInput1">Frequency (In Minutes)</label>
-                      <input type="interval" class="form-control" id="exampleFormControlInput1">
+                      <input type="integer" class="input" id="frequencyInput">
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="submit" class="btn btn-primary" value="submit">Submit</button>
                 </form>
               </div>
           </div>
